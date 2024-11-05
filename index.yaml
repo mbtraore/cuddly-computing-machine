@@ -8,7 +8,7 @@ entries:
           description: upgrade app version to 0.3.14
     apiVersion: v2
     appVersion: 0.3.14
-    created: "2024-11-05T12:11:32.512678+01:00"
+    created: "2024-11-05T12:33:39.1656159+01:00"
     description: Get up and running with large language models locally.
     digest: 2001ece9d5ccb9f9eeba72bfaa6c8aea8e33cdc83aa0d20f99c1cdd849c6915e
     home: https://ollama.ai/
@@ -37,7 +37,7 @@ entries:
           description: upgrade app version to 0.3.14
     apiVersion: v2
     appVersion: 0.3.14
-    created: "2024-11-05T12:11:32.5157561+01:00"
+    created: "2024-11-05T12:33:39.1688989+01:00"
     description: Get up and running with large language models locally.
     digest: 2001ece9d5ccb9f9eeba72bfaa6c8aea8e33cdc83aa0d20f99c1cdd849c6915e
     home: https://ollama.ai/
@@ -64,7 +64,7 @@ entries:
       licenses: MIT
     apiVersion: v2
     appVersion: 0.3.35
-    created: "2024-11-05T12:11:32.514237+01:00"
+    created: "2024-11-05T12:33:39.1674177+01:00"
     dependencies:
     - condition: ollama.enabled
       import-values:
@@ -82,7 +82,7 @@ entries:
       version: '>=0.0.1'
     description: "Open WebUI: A User-Friendly Web Interface for Chat Interactions
       \U0001F44B"
-    digest: d3c1b41fc887b04b1422713860ec3345fe1a8c52ea7bcb46948dd98d963f5cad
+    digest: 5ec8ad6993ef8d1173fbde560e28c241c67435c93e0e729d864146454e7ab2b9
     home: https://www.openwebui.com/
     icon: https://raw.githubusercontent.com/open-webui/open-webui/main/static/favicon.png
     keywords:
@@ -98,50 +98,12 @@ entries:
     urls:
     - https://mbtraore.github.io/cuddly-computing-machine/open-webui-3.5.0.tgz
     version: 3.5.0
-  - annotations:
-      licenses: MIT
-    apiVersion: v2
-    appVersion: 0.3.35
-    created: "2024-11-05T12:11:32.5172539+01:00"
-    dependencies:
-    - condition: ollama.enabled
-      import-values:
-      - child: service
-        parent: ollama.service
-      name: ollama
-      repository: https://otwld.github.io/ollama-helm/
-      version: '>=0.24.0'
-    - condition: pipelines.enabled
-      import-values:
-      - child: service
-        parent: pipelines.service
-      name: pipelines
-      repository: https://helm.openwebui.com
-      version: '>=0.0.1'
-    description: "Open WebUI: A User-Friendly Web Interface for Chat Interactions
-      \U0001F44B"
-    digest: d3c1b41fc887b04b1422713860ec3345fe1a8c52ea7bcb46948dd98d963f5cad
-    home: https://www.openwebui.com/
-    icon: https://raw.githubusercontent.com/open-webui/open-webui/main/static/favicon.png
-    keywords:
-    - llm
-    - chat
-    - web-ui
-    name: open-webui
-    sources:
-    - https://github.com/open-webui/helm-charts
-    - https://github.com/open-webui/open-webui/pkgs/container/open-webui
-    - https://github.com/otwld/ollama-helm/
-    - https://hub.docker.com/r/ollama/ollama
-    urls:
-    - https://mbtraore.github.io/cuddly-computing-machine/charts/open-webui-3.5.0.tgz
-    version: 3.5.0
   pipelines:
   - annotations:
       licenses: MIT
     apiVersion: v2
     appVersion: alpha
-    created: "2024-11-05T12:11:32.5147824+01:00"
+    created: "2024-11-05T12:33:39.1679177+01:00"
     description: 'Pipelines: UI-Agnostic OpenAI API Plugin Framework'
     digest: ab13acb3869193ec3fcdea3c0ff59e5ef85d997322bd7b2444cdbfce998709cc
     home: https://github.com/open-webui/pipelines
@@ -161,7 +123,7 @@ entries:
       licenses: MIT
     apiVersion: v2
     appVersion: alpha
-    created: "2024-11-05T12:11:32.5177599+01:00"
+    created: "2024-11-05T12:33:39.1693894+01:00"
     description: 'Pipelines: UI-Agnostic OpenAI API Plugin Framework'
     digest: ab13acb3869193ec3fcdea3c0ff59e5ef85d997322bd7b2444cdbfce998709cc
     home: https://github.com/open-webui/pipelines
@@ -177,4 +139,4 @@ entries:
     urls:
     - https://mbtraore.github.io/cuddly-computing-machine/charts/pipelines-0.0.4.tgz
     version: 0.0.4
-generated: "2024-11-05T12:11:32.5114858+01:00"
+generated: "2024-11-05T12:33:39.1644636+01:00"
